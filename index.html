@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px
+        }
+
+        .disable {
+            display: none;
+        }
+
+        #btn {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        #counter {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+    </style>
+    <script>
+        let str = '';
+        let counter = 0
+        const arr = ['🤨', '😏']
+        function clickFnc() {
+            const button = document.getElementById('btn')
+            button.classList.add('disable');
+            const content = document.getElementById('content')
+            const counterElement = document.getElementById('counter')
+            if (content && counterElement) {
+                const timer = setInterval(() => {
+                    str += arr[Math.floor(Math.random() * arr.length)]
+                    counter++
+                    content.innerText = str
+                    counterElement.innerText = `Cũng nhiều: ${counter}`
+                }, 20);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <button id="btn" onclick="clickFnc()">Click me 🤨🤨🤨</button>
+        <p id="content"></p>
+        <p id="counter"></p>
+    </div>
+</body>
+
+</html>

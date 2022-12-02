@@ -31,6 +31,7 @@ Dự án này được chạy trên:
 * Sử dụng giao diện và dữ liệu bản đồ của [MapBox](https://www.mapbox.com/)(Tài liệu: [document](https://www.mapbox.com/))
 
 ![](https://assets.website-files.com/5d3ef00c73102c436bc83996/5d3ef00c73102c893bc83a28_logo-regular-p-500.png)
+
 * Cài đặt và chạy bằng [Docker](https://docs.docker.com/)(Tài liệu: [document](https://docs.docker.com/))
 ![](https://cdn.thenewstack.io/media/2014/04/homepage-docker-logo.png)
 * Truyền dữ liệu, thông tin trong thời gian thực với [Socket.io](https://socket.io/)
